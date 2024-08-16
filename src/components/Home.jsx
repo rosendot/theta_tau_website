@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import footballGif from './gifs/football-gif.gif';
-import letterInfrontKyle from './images/letter_infront_kyle.jpeg';
 
 function Home() {
     return (
