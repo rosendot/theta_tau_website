@@ -9,7 +9,6 @@ html,
 body {
     padding: 0%;
     margin: 0%;
-    /* height: 100%; */
 }
 
 body {
@@ -132,10 +131,7 @@ ul {
 
 .ot-landing-card:hover .ot-landing-card-content .ot-landing-card-gif:hover {
     transform: rotateX(-10deg);
-    /* box-shadow: 0 0 1px rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px; /* Larger shadow on hover */
-
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    /* Larger shadow on hover */
 }
 
 .ot-top-banner-content {
@@ -147,7 +143,6 @@ ul {
     grid-template-columns: 50% 50%;
     grid-column-start: 1;
     grid-column-end: 3;
-
     background-color: rgba(149, 35, 35, 0.8);
 
     h1 {
@@ -191,7 +186,6 @@ ul {
 .ot-pillers-card-container {
     display: flex;
     justify-content: space-around;
-    /* Adjust this property based on your layout preferences */
     align-items: center;
     height: 50vh;
 }
@@ -202,45 +196,27 @@ ul {
     height: 400px;
     perspective: 1000px;
     margin-right: 20px;
-    /* Add margin between cards */
-    /* border: 2px solid #3498db; Add a border to the card */
-    /* border-style: solid; */
-    /**/
-    /* box-sizing: border-box; /* Include the border in the total width and height */
 }
 
 .ot-pillers-card-content {
     position: absolute;
-
     backdrop-filter: blur(10px);
-
     width: 100%;
     height: 100%;
     padding: 2vw;
-
     text-align: justify;
-    /* font-size: 1vw; */
     justify-content: right;
     background-color: white;
     color: black;
     overflow: hidden;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transform-style: preserve-3d;
-
-    /* background: rgba( */
-    /*   52, */
-    /*   152, */
-    /*   219, */
-    /*   0.7 */
-    /* ); /* Overlay color with alpha transparency */
     transition: transform 0.5s;
     backdrop-filter: blur(10px);
     box-sizing: border-box;
-    /* Include the border in the total width and height */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -267,20 +243,13 @@ ul {
 
 .ot-pillers-card:hover .ot-pillers-card-content {
     transform: rotateX(-10deg);
-    /* box-shadow: 0 0 1px rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px; /* Larger shadow on hover */
-
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    /* Larger shadow on hover */
 }
 
 .ot-purpose-container {
-    /* margin: 5vh; */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    /* padding: 7vh; */
     height: 50vh;
-    /* background-image: url(https://www.kappathetatau.org/assets/imgs/posts/thetatau-history.jpg); */
-
     background-attachment: fixed;
     background-image: url(https://www.kappathetatau.org/assets/imgs/posts/thetatau-history.jpg);
     background-repeat: no-repeat;
@@ -288,22 +257,18 @@ ul {
     background-position-x: 50%;
     background-position-y: 120%;
     background-size: 75%;
-    /* background-color: rgba(149, 35, 35, 0.2); */
 }
 
 .ot-purpose-content {
-    /* height: 100%; */
     padding: 2vw;
     z-index: 3;
     grid-column-start: 3;
     grid-column-end: 6;
     color: #f2e8c6;
     background-color: rgba(149, 35, 35, 0.95);
-    /* background-color: rgba(red, green, blue, alpha); */
 
     h2 {
         font-size: 4vw;
-
         font-family: "Alegreya Sans SC", sans-serif;
         font-weight: 400;
         font-style: normal;

@@ -16,7 +16,6 @@
 }
 
 .eboard-members .gallery {
-    /* height: 100%; */
     background-position: center;
     background-size: cover;
     /* background-image: url(images/acdc.jpeg); */
@@ -24,10 +23,6 @@
     /* background-attachment: fixed; */
 }
 
-/* .active-members { */
-/*   /* padding: 1%; */
-/*   background-color: beige; */
-/* } */
 .active-members .pledge-semester-fall-2019 .gallery {
     background-position: center;
     background-size: cover;
@@ -35,10 +30,6 @@
     background-attachment: fixed;
 }
 
-/* .alumni-members { */
-/*   /* padding: 1%; */
-/*   background-color: green; */
-/* } */
 .alumni-members .pledge-semester-fall-xxxx .gallery {
     background-position: center;
     background-size: cover;
@@ -46,7 +37,6 @@
     background-attachment: fixed;
 }
 
-/*Everything dealing with the Gallery*/
 .gallery-wrapper {
     height: 100%;
     width: 100%;
@@ -55,9 +45,6 @@
     justify-content: center;
     border: red;
     border-style: solid;
-    /* margin: 1%; */
-    /* height: 100%; */
-    /* margin-bottom: 0%; */
 }
 
 .gallery {
@@ -66,7 +53,6 @@
     display: flex;
     overflow-x: scroll;
     gap: 10px;
-    /* Adjust the gap between flip containers */
 }
 
 #backBtn,
@@ -80,9 +66,6 @@
     transform: rotate(180deg);
 }
 
-/*End of the Gallery*/
-
-/*Dealing with the Card's themselves*/
 .card {
     perspective: 800px;
     width: 17vw;
@@ -110,7 +93,6 @@
     border-style: solid;
     border-color: black;
     border-radius: 10px;
-    /* border-top-right-radius: 10px; */
     backface-visibility: hidden;
     position: absolute;
     top: 0;
@@ -122,7 +104,6 @@
 
 .card-front {
     z-index: 2;
-    /* background: red; */
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -132,7 +113,6 @@
 
 .card-back {
     transform: rotateY(180deg);
-    /* background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,7 +148,6 @@
 }
 
 .card-back-content {
-    /* padding: 2vw;  */
     box-sizing: border-box;
     width: 95%;
     height: 80%;
@@ -176,7 +155,6 @@
 }
 
 .card-back-content {
-    /* padding: 2vw;  */
     box-sizing: border-box;
     width: 95%;
     height: 80%;
