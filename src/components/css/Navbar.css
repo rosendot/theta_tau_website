@@ -8,8 +8,13 @@
     align-items: center;
     padding: 0 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    top: 0;
+    top: -70px;
     z-index: 1000;
+    transition: top 0.3s ease-in-out;
+}
+
+.ot-landing-navbar.visible {
+    top: 0;
 }
 
 .ot-landing-navbar-logo {
@@ -21,6 +26,7 @@
 .ot-landing-navbar-logo img {
     height: 50px;
     width: auto;
+    cursor: pointer;
 }
 
 .ot-landing-navbar-links {
