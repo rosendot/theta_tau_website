@@ -1,0 +1,189 @@
+.eboard-members,
+.active-members,
+.alumni-members {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.eboard-members .gallery-wrapper {
+    background-position: center;
+    background-size: cover;
+    /* background-image: url(images/redswirl.jpg); */
+    /* background-image: url(https://pngtree.com/freebackground/a-red-swirl-pattern-on-a-white-surface_12959138.html); */
+    /* background-attachment: fixed; */
+}
+
+.eboard-members .gallery {
+    /* height: 100%; */
+    background-position: center;
+    background-size: cover;
+    /* background-image: url(images/acdc.jpeg); */
+    /* background-color: #952323; */
+    /* background-attachment: fixed; */
+}
+
+/* .active-members { */
+/*   /* padding: 1%; */
+/*   background-color: beige; */
+/* } */
+.active-members .pledge-semester-fall-2019 .gallery {
+    background-position: center;
+    background-size: cover;
+    /* background-image: url(images/dario-banner.jpeg); */
+    background-attachment: fixed;
+}
+
+/* .alumni-members { */
+/*   /* padding: 1%; */
+/*   background-color: green; */
+/* } */
+.alumni-members .pledge-semester-fall-xxxx .gallery {
+    background-position: center;
+    background-size: cover;
+    /* background-image: url(images/brodie-banner.jpeg); */
+    background-attachment: fixed;
+}
+
+/*Everything dealing with the Gallery*/
+.gallery-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: red;
+    border-style: solid;
+    /* margin: 1%; */
+    /* height: 100%; */
+    /* margin-bottom: 0%; */
+}
+
+.gallery {
+    height: 100%;
+    padding: 1%;
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+    /* Adjust the gap between flip containers */
+}
+
+#backBtn,
+#nextBtn {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+#backBtn {
+    transform: rotate(180deg);
+}
+
+/*End of the Gallery*/
+
+/*Dealing with the Card's themselves*/
+.card {
+    perspective: 800px;
+    width: 17vw;
+    height: 50vh;
+    padding: 10px;
+    position: relative;
+    flex: none;
+    grid-template-columns: auto auto auto;
+}
+
+.card:hover .card-flipper {
+    transform: rotateY(180deg);
+}
+
+.card-flipper {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card-front,
+.card-back {
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    /* border-top-right-radius: 10px; */
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+}
+
+.card-front {
+    z-index: 2;
+    /* background: red; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    /* background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.card-front-content {
+    padding: 2%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card-front-content p {
+    margin: 3px;
+    text-align: justify;
+}
+
+.card-front img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+}
+
+.card-back img {
+    width: 100%;
+    height: 25%;
+    object-fit: cover;
+}
+
+.card-back-content {
+    /* padding: 2vw;  */
+    box-sizing: border-box;
+    width: 95%;
+    height: 80%;
+    overflow: auto;
+}
+
+.card-back-content {
+    /* padding: 2vw;  */
+    box-sizing: border-box;
+    width: 95%;
+    height: 80%;
+    overflow: auto;
+}
+
+.card-back-content p {
+    margin: 25px;
+    text-align: justify;
+}

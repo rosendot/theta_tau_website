@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './css/Home.css'
 
 function Home() {
     return (
@@ -88,14 +89,11 @@ function Home() {
             <div className="ot-purpose-container">
                 <div className="ot-purpose-content">
                     <h2>Why are we on campus?</h2>
-                    <br />
-                    <br />
                     <p>
                         We strive to develop and maintain a high standard of professional
                         interest among its members and to unite them in a strong bond of
                         fraternal fellowship.
                     </p>
-                    <br />
                     <p>
                         Xi Gamma is about building a career you can be proud of and making
                         lifelong friends along the way. We push and support each other to

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './css/Members.css'
 function Members() {
     return (
         <div className="members-page">
